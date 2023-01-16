@@ -1,42 +1,42 @@
 function changeCapitalization1 ( sentence ) {
     
-    let string = ""
+  let string = '';
 
-    for(let i=0; i<sentence.length; i++)
+  for(let i=0; i<sentence.length; i++)
+  {
+    if(sentence[i] === sentence[i].toLowerCase())
     {
-        if(sentence[i] === sentence[i].toLowerCase())
-        {
-            string+=sentence[i].toUpperCase()
-        }
-        else
-        {
-            string+=sentence[i].toLowerCase()
-        }
+      string+=sentence[i].toUpperCase();
     }
+    else
+    {
+      string+=sentence[i].toLowerCase();
+    }
+  }
 
-    return string;
+  return string;
 
 }
 
 const changeCapitalization2 = ( sentence ) => {
 
 
-    let string = ""
+  let string = '';
 
-    for(let i=0; i<sentence.length; i++)
+  for(let i=0; i<sentence.length; i++)
+  {
+    if(sentence[i] === sentence[i].toLowerCase())
     {
-        if(sentence[i] === sentence[i].toLowerCase())
-        {
-            string+=sentence[i].toUpperCase()
-        }
-        else
-        {
-            string+=sentence[i].toLowerCase()
-        }
+      string+=sentence[i].toUpperCase();
     }
+    else
+    {
+      string+=sentence[i].toLowerCase();
+    }
+  }
 
-    return string;
-}
+  return string;
+};
 
 module.exports = changeCapitalization1;
 module.exports = changeCapitalization2;
