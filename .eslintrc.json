@@ -6,16 +6,13 @@
         "jest/globals": true
     },
     "extends": "eslint:recommended",
-    "overrides": [
-    ],
+    "overrides": [],
     "parserOptions": {
         "ecmaVersion": "latest"
     },
-    
-    "plugins": ["jest"]
-    ,
-   
-    
+    "plugins": [
+        "jest"
+    ],
     "rules": {
         "indent": [
             "error",
