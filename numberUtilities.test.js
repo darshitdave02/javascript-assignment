@@ -8,11 +8,11 @@ describe('Number Utilities', () => {
     });
   
     it('Should throw unsupported type error when input is not a number', ()=> {
-      expect(() => {division('a', 'b')}).toThrow(UnsupportedTypeError);
+      expect(() => {division('a', 'b');}).toThrow(UnsupportedTypeError);
     });
   
     it('Should throw error divisor is 0', ()=> {
-      expect(() => {division(2, 0)}).toThrow(DivisionByZeroError);
+      expect(() => {division(2, 0);}).toThrow(DivisionByZeroError);
     });
-  })
-})
+  });
+});
