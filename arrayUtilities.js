@@ -58,7 +58,7 @@ const arrayOperation2 = (numbers) => {
   return numbers.reduce((acc, curr) => {
     if(curr%2===0)
     {
-      acc.push(curr);
+      acc.push(curr*3);
     }
     return acc;
   },[]);
@@ -70,7 +70,7 @@ const arrayOperation2 = (numbers) => {
 
 
 
-console.log(arrayOperation([1,2,3]));
+console.log(arrayOperation2([1,2,3]));
 
 
 
