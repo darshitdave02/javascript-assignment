@@ -1,4 +1,4 @@
-const { doubleNumbers, filterEvenNumbers, arrayOperation} = require('./arrayUtilities');
+const { doubleNumbers, filterEvenNumbers, arrayOperation, arrayOperation2} = require('./arrayUtilities');
 
 describe('Array utilities',() => {
   describe('Double numbers',() => {
@@ -68,20 +68,20 @@ describe('Array utilities',() => {
 
   describe('Triple elements in array and filter out even numbers with reduce',() => {
     it('Should give even numbers when the input is an array',() => {
-      const result = arrayOperation([1,2,3]);
+      const result = arrayOperation2([1,2,3]);
       expect(result).toEqual([6]);
     });
 
     it('Should throw an error when input is not an array',() => {
             
            
-      expect(()=> arrayOperation('abs')).toThrow('Input is not an array');
+      expect(()=> arrayOperation2('abs')).toThrow('Input is not an array');
     });
 
     it('Should throw an error when array has an element which is not a number',() => {
             
            
-      expect(()=> arrayOperation([1,23,678,'hello',97])).toThrow('Array should consist of numbers only');
+      expect(()=> arrayOperation2([1,23,678,'hello',97])).toThrow('Array should consist of numbers only');
     });
 
   });
