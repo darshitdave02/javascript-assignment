@@ -1,5 +1,5 @@
-const concatenate1 = require('./concatenate');
-const concatenate2 = require('./concatenate');
+const concatenate1 = require('./stringUtility');
+const concatenate2 = require('./stringUtility');
 
 describe('Test to check concatenation of strings without first character',()=>{
   test('test case one',()=>{

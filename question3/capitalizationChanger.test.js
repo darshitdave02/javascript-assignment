@@ -1,5 +1,5 @@
-const changeCapitalization1 = require('./changeCapitalization');
-const changeCapitalization2 = require('./changeCapitalization');
+const changeCapitalization1 = require('./capitalizationChanger');
+const changeCapitalization2 = require('./capitalizationChanger');
 
 describe('Test to change capitalization',()=>{
   test('test case one',() => {

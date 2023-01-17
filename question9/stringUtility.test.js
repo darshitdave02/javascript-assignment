@@ -1,5 +1,5 @@
-const replaceWithNextCharacterInString1 = require('./replaceWithNextCharacterInString');
-const replaceWithNextCharacterInString2 = require('./replaceWithNextCharacterInString');
+const replaceWithNextCharacterInString1 = require('./stringUtility');
+const replaceWithNextCharacterInString2 = require('./stringUtility');
 
 describe('Test to check functionality to replace each character in string with its next character',()=>{
   test('test case one',()=>{

@@ -1,5 +1,5 @@
-const countVowels1 = require('./countVowels');
-const countVowels2 = require('./countVowels');
+const countVowels1 = require('./vowelCounter');
+const countVowels2 = require('./vowelCounter');
 
 describe('Test to count number of Vowels',()=>{
   test('test case one',()=>{
