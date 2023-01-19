@@ -1,14 +1,31 @@
-const fs = require('fs');
+let fs = require('fs');
 
-const getFileContent = (inputFile) => {
-    
-  const data = fs.readFileSync(inputFile,
-    {encoding:'utf8', flag:'r'});
- 
-  console.log(data);
-  
+const getContents = (file) => {
+
+  return new Promise(function (resolve, reject) {
+
+    fs.readFile(file, 'utf-8', (error, data) => {
+
+      if (error) {
+        reject(error);
+      }
+
+      resolve(data);
+
+    });
+  });
+
 };
 
-getFileContent('sampleInput/input.txt');
-getFileContent('sampleInput/input2.txt');
-getFileContent('sampleInput/input3.txt');
+getContents('sampleInput/input.txt').then((value)=>{
+  console.log(value);
+    
+});
+getContents('sampleInput/input2.txt').then((value)=>{
+  console.log(value);
+    
+});
+getContents('sampleInput/input3.txt').then((value)=>{
+  console.log(value);
+    
+});
